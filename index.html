@@ -895,10 +895,7 @@
   document.getElementById('hero-dl-btn').addEventListener('click', e => { e.preventDefault(); downloadPDF(); });
   document.getElementById('main-dl-btn').addEventListener('click', e => { e.preventDefault(); downloadPDF(); });
 
-  // Auto-download on page load (after 1s delay so page renders first)
-  window.addEventListener('load', () => {
-    setTimeout(downloadPDF, 1000);
-  });
+
 
   // ── SCROLL REVEAL ──
   const fadeEls = document.querySelectorAll('.fade-in');
